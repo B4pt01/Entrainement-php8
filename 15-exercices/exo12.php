@@ -21,10 +21,16 @@ if (isset($_POST['Montantcmd']) && isset($_POST['typecmd'])) {
     switch ($_POST['typecmd']) {
         case 'standard':
             echo "prix total : " . ($Montantcmd + $fps);
+            break;
         case 'express':
             echo "prix total : " . ($Montantcmd + $fpe);
+            break;
         case 'internationnal':
             echo "prix total : " . ($Montantcmd + $fpi);
+            break;
+        default:
+            echo "commande introuvable";
+            break;
     }
 }
 ?>
