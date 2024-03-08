@@ -5,7 +5,7 @@ include("partials/menu.php");
 <?php
 $personnages = array(
     "guerrier" => array(
-        "nom" => "Guerrier",
+        "nom" => "Pierre",
         "classe" => "Guerrier",
         "race" => "Humain",
         "niveau" => 10,
@@ -14,7 +14,7 @@ $personnages = array(
         "intelligence" => 5
     ),
     "mage" => array(
-        "nom" => "Mage",
+        "nom" => "Paul",
         "classe" => "Mage",
         "race" => "Elfe",
         "niveau" => 15,
@@ -23,7 +23,7 @@ $personnages = array(
         "intelligence" => 12
     ),
     "voleur" => array(
-        "nom" => "Voleur",
+        "nom" => "Jaque",
         "classe" => "Voleur",
         "race" => "Nain",
         "niveau" => 8,
