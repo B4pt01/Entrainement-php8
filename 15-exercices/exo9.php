@@ -24,7 +24,7 @@ $personnages = array(
     )
 );
 ?>
-<form method="post" action="">
+<form method="post" action="#">
     <label for="personnage">Choisir un personnage : </label>
     <select name="personnage" id="personnage">
         <option value="">-- Choisir un personnage --</option>
@@ -35,7 +35,7 @@ $personnages = array(
     <input type="submit" value="Afficher les caractéristiques">
 </form>
 <?php
-if (isset($_POST["personnage"]) && $_POST["personnage"] != "") {
+if (isset($_POST["personnage"])) {
     $personnage = $_POST["personnage"];
     $caracteristiques = $personnages[$personnage];
     echo "<h2>" . $caracteristiques["nom"] . "</h2>";
